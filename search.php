@@ -1,8 +1,12 @@
 <?php 
-
+extract($_POST);
 	//include header file
 	include ('include/header.php');
-
+	if(isset($_POST['blood_group'])&& isset($_POST['city'])){
+		$blood_group = $_POST['blood_group'];
+		$city = $_POST['city'];
+		
+	}
 ?>
 <style>
 	.size{
@@ -128,7 +132,7 @@
 		
 		$city= $_GET['city'];
 		$blood_group=$_GET['blood_group'];
-		$sql = "SELECT * FROM donor WHERE city= '$city' OR blood_group='$blood_group'";
+		$sql = "SELECT * FROM donor WHERE city= '$city' AND blood_group='$blood_group'";
 
 		$result = mysqli_query($connection, $sql);
 		if (mysqli_num_rows($result) > 0) {

@@ -570,7 +570,7 @@ h3 {
                 <!--End form-group-->
                 <div class="form-inline">
                     <input  type="checkbox" checked="" name="term" value="true" required style="margin-left:10px;">
-                    <span style="margin-left:10px;"><b>I am agree to donate my blood and show my Name, Contact Nos. and
+                    <span style="margin-left:10px;"><b>I agree to donate my blood and show my Name, Contact Nos. and
                             E-Mail in Blood donors List</b></span>
                 </div>
                 <!--End form-group-->

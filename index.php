@@ -19,7 +19,7 @@
 						<hr class="white-bar text-center">
 						
 
-						<form action="search.php" method="get" class="form-inline text-center" style="padding: 40px 0px 0px 5px;">
+						<form action="search.php" method="post" class="form-inline text-center" style="padding: 40px 0px 0px 5px;">
 							<div class="form-group text-center justify-content-center">
 							
 								<select style="width: 220px; height: 45px;" name="city" id="city" class="form-control demo-default" required>
@@ -69,7 +69,7 @@
 								</select>
 							</div>
 							<div class="form-group center-aligned">
-								<button type="submit" class="btn btn-lg btn-danger">Search</button>
+								<button type="submit" class="btn btn-lg btn-danger" id="search">Search</button>
 							</div>
 						</form>
 					</div>

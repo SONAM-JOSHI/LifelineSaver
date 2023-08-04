@@ -2,7 +2,7 @@
 <?php 
 
 	include 'include/header.php'; 
-	
+	session_start();
 
 ?>
 
@@ -31,7 +31,7 @@
     							</div>
   							</div>
 							<div class="heading text-center">
-								<h3>Welcome </h3> <h1>User Name</h1>
+								<h3>Welcome </h3> <h1><?php echo $_SESSION['name'];?></h1>
 							</div>
 							<p class="text-center">Here you can manage your account update your profile</p>
 							<button style="margin-top: 20px;" name="date" id="save_the_life" class="btn btn-lg btn-danger center-aligned ">Save The Life</button>

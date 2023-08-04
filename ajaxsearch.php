@@ -7,7 +7,7 @@
 		
 		$city= $_GET['city'];
 		$blood_group=$_GET['blood_group'];
-		$sql = "SELECT * FROM donor WHERE city= '$city' OR blood_group='$blood_group'";
+		$sql = "SELECT * FROM donor WHERE city= '$city' AND blood_group='$blood_group'";
 
 		$result = mysqli_query($connection, $sql);
 		if (mysqli_num_rows($result) > 0) {
