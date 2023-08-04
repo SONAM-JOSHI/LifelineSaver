@@ -56,12 +56,6 @@ INSERT INTO `donor` (`id`, `name`, `gender`, `email`, `city`, `dob`, `contact_no
 -- Table structure for table `user`
 --
 
-CREATE TABLE `user` (
-  `name` varchar(60) NOT NULL,
-  `age` int(19) NOT NULL,
-  `roll` int(19) NOT NULL,
-  `address` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Indexes for dumped tables
