@@ -34,7 +34,7 @@
 								<h3>Welcome </h3> <h1><?php echo $_SESSION['name'];?></h1>
 							</div>
 							<p class="text-center">Here you can manage your account update your profile</p>
-							<button style="margin-top: 20px;" name="date" id="save_the_life" class="btn btn-lg btn-danger center-aligned ">Save The Life</button>
+							<button style="margin-top: 20px;" name="date" id="save_the_life" class="btn btn-lg btn-danger center-aligned" click="">Save The Life</button>
 							<div class="test-success text-center" id="data" style="margin-top: 20px;"><!-- Display Message here--></div>
 							
 						</div>
@@ -48,5 +48,36 @@
 
 include 'include/navigation.php'; 
 // include 'include/usernav.php'; 
-include 'include/footer.php'; 
+include 'include/footer.php';
+
+
 ?>
+
+<script type="text/javascript">
+$(function(){
+
+$("#save_the_life").on('click',function(){
+
+$.ajax({
+
+	type:'GET',
+	url:'./updatesave.php',
+	data:{date: new Date()},
+	success:function(data){
+		alert(data)
+		// if(!data.error){
+		// 	$("#data").html(data);
+		// }
+	}
+});
+
+});
+
+
+});
+
+
+
+
+
+	</script>
