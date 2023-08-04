@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 04, 2023 at 01:29 PM
+-- Generation Time: Aug 04, 2023 at 01:40 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -49,6 +49,19 @@ INSERT INTO `donor` (`id`, `name`, `gender`, `email`, `city`, `dob`, `contact_no
 (8, 'Sonam Joshi', 'Female', 'sdsaf@gmail.com', 'Doti', '1972-08-15', '9812345675', '0', 'aada281e1cfa60ad1dde20134481f8ae', 'A-'),
 (10, 'Aryan Luitel', 'Male', 'aryan@gmail.com', 'Lalitpur', '1971-09-16', '9812312340', '0', 'ce2742720569b5498c40030d880f4c03', 'B+'),
 (11, 'Peayush Shrestha', 'Female', 'peayushstha@gmail.com', 'Itahari', '1975-08-17', '9812322332', '0', 'd26f386ab024f3494f1eac1d7f062d5a', 'A+');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `name` varchar(60) NOT NULL,
+  `age` int(19) NOT NULL,
+  `roll` int(19) NOT NULL,
+  `address` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Indexes for dumped tables
