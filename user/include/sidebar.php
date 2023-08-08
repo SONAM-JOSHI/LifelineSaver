@@ -1,4 +1,4 @@
- <!-- <style type="text/css">
+ <style type="text/css">
  
  .customNav{
  	position: absolute;
@@ -33,7 +33,7 @@
             <li><a href="update.php"><i class="fa fa-edit" aria-hidden="true"></i><svg class="glyph stroked dashboard-dial"></svg>Update</a></li>
             
             
-            <li><a href="logout.php"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i><svg class="glyph stroked dashboard-dial"></svg>Logout</a></li>
+            <li><a href="../index.php"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i><svg class="glyph stroked dashboard-dial"></svg>Logout</a></li>
         </ul>
 </div>
-</div>/.sidebar -->
+</div>

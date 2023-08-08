@@ -262,6 +262,7 @@ if (isset($_POST['submit'])) {
 			<strong>Data Inserted Successfully.</strong>
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 			  <span aria-hidden="true">&times;</span>
+
 			</button>
 		  </div>';
 
@@ -350,7 +351,7 @@ h3 {
 
             <!-- Error Messages -->
 
-            <form class="form-group" action="" method="post" novalidate="">
+            <form class="form-group" action="" method="post" novalidate="" >
                 <div class="form-group">
                     <label for="fullname">Full Name</label>
                     <input type="text" name="name" id="fullname" placeholder="Full Name" required pattern="[A-Za-z/\s]+"
@@ -383,7 +384,7 @@ h3 {
                     <label for="gender">Gender</label><br>
                     Male<input type="radio" name="gender" id="gender" value="Male"
                         style="margin-left:10px; margin-right:10px;" checked>
-                    FeMale<input type="radio" name="gender" id="gender" value="Female" style="margin-left:10px;"
+                    Female<input type="radio" name="gender" id="gender" value="Female" style="margin-left:10px;"
                     <?php if (isset($gender)){if($gender="Female")echo"checked";}; ?>
                     <?php if (isset($genderError)) echo $genderError; ?>>
                 </div>
@@ -480,6 +481,11 @@ h3 {
                         <option value="1998">1998</option>
                         <option value="1999">1999</option>
                         <option value="1999">2000</option>
+                        <option value="1999">2001</option>
+                        <option value="1999">2002</option>
+                        <option value="1999">2003</option>
+                        <option value="1999">2004</option>
+                        <option value="1999">2005</option>
                     </select>
 
                 </div>
@@ -527,27 +533,40 @@ h3 {
                         <option value="Damak">Damak</option>
                         </optgroup>
                         <option value="Itahari">Itahari</option>
+                        <option value="Dharan">Dharan</option>
 
                         <optgroup title="Province No 2" label="&raquo; Province No 2"></optgroup>
                         <option value="Biratnagar">Biratnagar</option>
                         <option value="Saptari">Saptari</option>
+                        <option value="Saptari">Janakpur</option>
 
                         <optgroup title="Province No 3" label="&raquo; Province No 3"></optgroup>
                         <option value="BKathamndu">Kathamndu</option>
                         <option value="Bhaktapur">Bhaktapur</option>
                         <option value="Lalitpur">Lalitpur</option>
+                        <option value="Lalitpur">Hetauda</option>
 
                         <optgroup title="Province No 4" label="&raquo; Province No 4"></optgroup>
                         <option value="Pokhara">Pokhara</option>
+                        <option value="Damauli">Damauli</option>
+                        <option value="Waling">Waling</option>
+                        <option value="Baglungbazar">Baglungbazar</option>
 
                         <optgroup title="Province No 5" label="&raquo; Province No 5"></optgroup>
-                        <option value="Bajura">Bajura</option>
+                        <option value="Butwal">Butwal</option>
+                        <option value="Bhairahawa">Bhairahawa</option>
+                        <option value="Nepaljung">Nepaljung</option>
+                        <option value="Ghorahi">Ghorahi</option>
+                        <option value="Tulsipur">Tulsipur</option>
 
                         <optgroup title="Province No 6" label="&raquo; Province No 6"></optgroup>
-                        <option value="Doti">Doti</option>
+                        <option value="Birendranagar">Birendranagar</option>
 
                         <optgroup title="Province No 7" label="&raquo; Province No 7"></optgroup>
                         <option value="Dhangadhi">Dhangadhi</option>
+                        <option value="Mahendranagar">Mahendranagar</option>
+                        <option value="Tikapur">Tikapur</option>
+                        <option value="Bhimdutta">Bhimdutta</option>
                     </select>
                     <?php if (isset($cityError))
 						echo $cityError; ?>
@@ -570,14 +589,14 @@ h3 {
                 <!--End form-group-->
                 <div class="form-inline">
                     <input  type="checkbox" checked="" name="term" value="true" required style="margin-left:10px;">
-                    <span style="margin-left:10px;"><b>I agree to donate my blood and show my Name, Contact Nos. and
-                            E-Mail in Blood donors List</b></span>
+                    <span style="margin-left:10px;"><b>I agree to donate my Blood and show my Name, Contact Number and
+                            E-Mail in Blood donors List.</b></span>
                 </div>
                 <!--End form-group-->
 
                 <div class="form-group">
                     <button id="submit" name="submit" type="submit" class="btn btn-lg btn-danger center-aligned"
-                        style="margin-top: 20px;">SignUp</button>
+                        style="margin-top: 20px;"  on click ="signin.php">SignUp</button>
                 </div>
             </form>
         </div>
